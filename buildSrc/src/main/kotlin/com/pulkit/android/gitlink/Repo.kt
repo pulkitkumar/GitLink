@@ -2,9 +2,9 @@ package com.pulkit.android.gitlink
 
 class Repo(val name: String) {
 
-    lateinit var type: String
-    lateinit var value: String
-    lateinit var path: String
+    var type: String? = null
+    var value: String? = null
+    var path: String? = null
 
     fun type(type: String) {
         this.type = type
@@ -17,6 +17,4 @@ class Repo(val name: String) {
     fun path(path: String) {
         this.path = path
     }
-
-
 }

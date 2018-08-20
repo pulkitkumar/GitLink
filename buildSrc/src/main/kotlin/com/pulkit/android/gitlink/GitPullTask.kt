@@ -1,25 +1,18 @@
 package com.pulkit.android.gitlink
 
 import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-class GitPullTask : DefaultTask() {
+open class GitPullTask : DefaultTask() {
 
-    @OutputDirectory
     lateinit var repoDir: File
 
-    @Input
     lateinit var repoSpec: GitPullSpec
-
-    private var isOffline: Boolean = false
-        get() = project.gradle.startParameter.isOffline
 
     @TaskAction
     fun gitPull() {
-        if (isOffline) {
+        if (project.gradle.startParameter.isOffline) {
             return
         } else {
             when (repoSpec) {

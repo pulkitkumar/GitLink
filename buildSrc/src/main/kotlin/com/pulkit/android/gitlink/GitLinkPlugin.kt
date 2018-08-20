@@ -3,6 +3,7 @@ package com.pulkit.android.gitlink
 import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import java.io.File
 
 class GitLinkPlugin : Plugin<Project> {
 
@@ -14,13 +15,58 @@ class GitLinkPlugin : Plugin<Project> {
 
     private fun createTasks(project: Project) {
         val repos = project.extensions.getByName(EXTENSION_NAME) as NamedDomainObjectContainer<Repo>
-        repos.forEach<Repo?>{
-            GitLink(it!!, project).execute()
+        repos.all { repo ->
+            val taskName = "${repo.name}-git-link-task"
+
+            project.afterEvaluate {
+                var spec = makeSpec(repo)
+                val task = project.tasks.create(taskName, GitPullTask::class.java)
+
+                with(task) {
+                    description = "Pull '${repo.value}' for '${repo.name}'"
+                    group = TASK_GROUP_NAME
+                    repoDir = File(repo.path)
+                    repoSpec = spec!!
+                }
+                project.tasks.getByName(PRE_BUILD_TASK).dependsOn(task)
+            }
         }
+    }
+
+    private fun makeSpec(repo: Repo): GitPullSpec? = when (repo.type) {
+        COMMIT -> GitPullSpec.Commit(repo.value!!)
+        TAG -> GitPullSpec.Tag(repo.value!!)
+        BRANCH -> GitPullSpec.Branch(repo.value!!)
+        REMOTE_BRANCH -> GitPullSpec.RemoteBranch(repo.value!!)
+        else -> null
     }
 
     companion object {
         const val EXTENSION_NAME = "repos"
+        const val COMMIT = "commit"
+        const val TAG = "tag"
+        const val BRANCH = "branch"
+        const val REMOTE_BRANCH = "remoteBranch"
+        const val TASK_GROUP_NAME = "Git Pull"
+        const val PRE_BUILD_TASK = "preBuild"
     }
 }
+
+/*
+
+ serverEnvironmentContainer.all(new Action<ServerEnvironment>() {
+            public void execute(ServerEnvironment serverEnvironment) {
+                String env = serverEnvironment.getName();
+                String capitalizedServerEnv = env.substring(0, 1).toUpperCase() + env.substring(1);
+                String taskName = "deployTo" + capitalizedServerEnv;
+                Deploy deployTask = project.getTasks().create(taskName, Deploy.class);
+
+                project.afterEvaluate(new Action<Project>() {
+                    public void execute(Project project) {
+                        deployTask.setUrl(serverEnvironment.getUrl());
+                    }
+                });
+            }
+        });
+ */
 

@@ -1,6 +1,8 @@
 package com.pulkit.android.gitlink
 
-sealed class GitPullSpec {
+import java.io.Serializable
+
+sealed class GitPullSpec : Serializable{
     data class Commit(val commit: String) : GitPullSpec()
     data class Tag(val tag: String) : GitPullSpec()
     data class Branch(val branch: String) : GitPullSpec()
