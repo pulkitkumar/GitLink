@@ -1,0 +1,48 @@
+group = artifactGroup
+version = "${artifactVersion}.${buildNumber}"
+
+apply plugin: 'groovy'
+apply plugin: 'kotlin'
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.1.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.60"
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url "https://plugins.gradle.org/m2/" }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.60"
+
+    implementation "com.android.tools.build:gradle:3.1.3"
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8

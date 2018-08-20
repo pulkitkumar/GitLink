@@ -1,1 +1,1 @@
-include ':app', ':gitlink-gradle-plugin'
+include ':app'
