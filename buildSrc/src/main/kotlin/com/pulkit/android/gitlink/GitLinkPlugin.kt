@@ -51,22 +51,3 @@ class GitLinkPlugin : Plugin<Project> {
         const val PRE_BUILD_TASK = "preBuild"
     }
 }
-
-/*
-
- serverEnvironmentContainer.all(new Action<ServerEnvironment>() {
-            public void execute(ServerEnvironment serverEnvironment) {
-                String env = serverEnvironment.getName();
-                String capitalizedServerEnv = env.substring(0, 1).toUpperCase() + env.substring(1);
-                String taskName = "deployTo" + capitalizedServerEnv;
-                Deploy deployTask = project.getTasks().create(taskName, Deploy.class);
-
-                project.afterEvaluate(new Action<Project>() {
-                    public void execute(Project project) {
-                        deployTask.setUrl(serverEnvironment.getUrl());
-                    }
-                });
-            }
-        });
- */
-

@@ -23,9 +23,14 @@ android {
 
 repos {
     proto {
-        path "/Users/user/work/mobile_fd_protobuf"
+        path "/path/to/proto/dir"
         type "branch"
         value "master"
+    }
+    baseLib {
+        path "/path/to/base/lib/dir"
+        type "tag"
+        value "2.0"
     }
 }
 
