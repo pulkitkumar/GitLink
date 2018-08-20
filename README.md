@@ -5,7 +5,7 @@
 
 There are often cases that the codebase, or libraries used in the code are scattered over different git repositories.
 With time it often occurs that we need to be switching between tags, branches, commits of the dependent repositories.
-To handle such cases we can use the **GitLink** gradle plugin.
+To handle such cases I have created the **GitLink** gradle plugin.
 
 Just add the following code into you *build.gradle*. to start using the plugin.
 
@@ -36,4 +36,6 @@ We can add any number of repositories with any name in the repos configuration.
 4. "commit"
 
 * **value** is the respective value of the commit, tag, branch, or remote branch, and **path** is the location of the local clone.
+
+The code for the plugin is present in the buildSrc directory.
 

@@ -1,0 +1,98 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9a43daacf18149e12879da644470bccd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0fe1bdccd5a09a51af1faa3fdec74e98/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/a3c6b18f234f37c115f78056f6fd54de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/be6b361d77cff96c7578d668c11670d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/46155e3d5f7853b4e6f366f64de604ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/dc7f4b8488012c560fd37e0cfc31e434/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/838d553c4963ccc0d6741c2f742e9afe/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/f46d7a08fe09aeec7ecdac55ec2666f7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87b56841bdafed17d22efb73bee105a3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6955181f0052b48f10dead5082edb56a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6426cd8091351cb0cf617bc70563a3d2/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+	package
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:2:11-39
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:1-18:12
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:3:5-16:19
+	android:supportsRtl
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:7:18-44
+	android:label
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:4:18-50
+	android:roundIcon
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:6:18-63
+	android:icon
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:5:18-52
+	android:allowBackup
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:3:18-44
+	android:theme
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:8:18-49
+activity#com.pulkit.gitlink.MainActivity
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:10:9-15:20
+	android:name
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:10:19-46
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:11:13-14:29
+action#android.intent.action.MAIN
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:12:17-68
+	android:name
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:12:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:13:17-76
+	android:name
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml:13:27-74
+uses-sdk
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9a43daacf18149e12879da644470bccd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9a43daacf18149e12879da644470bccd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0fe1bdccd5a09a51af1faa3fdec74e98/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0fe1bdccd5a09a51af1faa3fdec74e98/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/a3c6b18f234f37c115f78056f6fd54de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/a3c6b18f234f37c115f78056f6fd54de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/be6b361d77cff96c7578d668c11670d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/be6b361d77cff96c7578d668c11670d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/46155e3d5f7853b4e6f366f64de604ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/46155e3d5f7853b4e6f366f64de604ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/dc7f4b8488012c560fd37e0cfc31e434/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/dc7f4b8488012c560fd37e0cfc31e434/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/838d553c4963ccc0d6741c2f742e9afe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/user/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/838d553c4963ccc0d6741c2f742e9afe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/f46d7a08fe09aeec7ecdac55ec2666f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/f46d7a08fe09aeec7ecdac55ec2666f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87b56841bdafed17d22efb73bee105a3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87b56841bdafed17d22efb73bee105a3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6955181f0052b48f10dead5082edb56a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6955181f0052b48f10dead5082edb56a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6426cd8091351cb0cf617bc70563a3d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/user/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6426cd8091351cb0cf617bc70563a3d2/AndroidManifest.xml:20:5-44
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		ADDED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/user/work/GitLink/app/src/main/AndroidManifest.xml
