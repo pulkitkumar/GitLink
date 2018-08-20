@@ -15,9 +15,6 @@ class GitLinkPlugin : Plugin<Project> {
     private fun createTasks(project: Project) {
         val repos = project.extensions.getByName(EXTENSION_NAME) as NamedDomainObjectContainer<Repo>
         repos.forEach<Repo?>{
-            project.logger.error("ok1>>>>>>>>")
-            project.logger.error(it!!.toString())
-            project.logger.error("ok2>>>>>>>>")
             GitLink(it!!, project).execute()
         }
     }

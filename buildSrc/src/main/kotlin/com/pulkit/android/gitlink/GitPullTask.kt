@@ -1,7 +1,6 @@
 package com.pulkit.android.gitlink
 
 import org.gradle.api.DefaultTask
-import org.gradle.api.logging.LogLevel
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
@@ -20,7 +19,6 @@ class GitPullTask : DefaultTask() {
 
     @TaskAction
     fun gitPull() {
-        logger.log(LogLevel.ERROR, "herere here >>>>>>>>>>>>>>>>>>>>")
         if (isOffline) {
             return
         } else {

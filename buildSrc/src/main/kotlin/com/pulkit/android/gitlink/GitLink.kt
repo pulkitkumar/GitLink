@@ -7,11 +7,9 @@ class GitLink(private val repo: Repo, private val project: Project) {
 
     fun execute() {
         var spec = makeSpec()
-        project.logger.error("ok3>>>>>>>>"+ repo.name+ "-"+repo.path+ "-"+repo.type)
         spec?.let {
             with(project) {
                 val taskName = "${repo.name}-git-link-task"
-                project.logger.error("ok4>>>>>>>>"+ taskName)
                 val task = tasks.create(taskName, GitPullTask::class.java) {
                     with(it) {
                         description = "Pull '${repo.value}' for '${repo.name}'"
